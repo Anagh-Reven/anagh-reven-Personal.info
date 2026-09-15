@@ -1,120 +1,84 @@
+# Hi, I'm Anagh Tiwari 👋
 
+### Computer Science Student | AI & ML | Full-Stack Development
 
-package com.example.javanotesmanager;
+I'm a final-year B.Tech student at Graphic Era Hill University,
+Dehradun, specialising in Artificial Intelligence and Machine Learning.
+I enjoy building and deploying applications that combine software
+development with practical AI capabilities.
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Scanner;
+## 🎓 Education
 
-public class javanotesmanager {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+**Graphic Era Hill University, Dehradun**  
+B.Tech in Computer Science and Engineering  
+Specialisation: Artificial Intelligence and Machine Learning  
+2023–2027 · Expected graduation: 2027
 
-        
-        System.out.println("Enter text for JavaFile1.txt:");
-        String text1 = scanner.nextLine();
-        createNote("JavaFile1.txt", text1);
+## 🛠️ Technical Skills
 
-       
-        System.out.println("Content of JavaFile1.txt:");
-        displayNote("JavaFile1.txt");
+- **Languages:** Python, Java, C, C++, JavaScript, SQL
+- **Frontend:** React, HTML, CSS
+- **Backend:** Flask, FastAPI
+- **Machine Learning:** scikit-learn
+- **Tools:** Git
+- **Project Experience:** LLM integration, REST APIs, PDF processing,
+  OCR and data visualisation
 
-      
-        System.out.println("Enter text for JavaFile2.txt:");
-        String text2 = scanner.nextLine();
-        createNote("JavaFile2.txt", text2);
+## 🚀 Featured Projects
 
-        
-        copyNoteContent("JavaFile1.txt", "JavaFile2.txt");
+### ResumeLens AI
+A resume compatibility analyser that compares resume and
+job-description PDFs, checks skills and keywords, and generates
+AI-assisted feedback with OCR and rule-based fallbacks.
 
-        
-        analyzeNote("JavaFile1.txt");
+**Technologies:** Python, Flask, React, PyPDF2, Tesseract OCR, OpenRouter
 
-     
-        searchWordInNote("JavaFile1.txt", "polymorphism");
+[Live Demo](https://resumelens-ai-one.vercel.app/) ·
+[Source Code](https://github.com/anagh-reven6789/resumelens-ai)
 
-        scanner.close();
-    }
+### Stock Vision
+A stock analysis dashboard featuring historical price charts,
+moving averages, volatility analysis and linear regression forecasts
+with chronological backtesting.
 
-    private static void createNote(String filename, String text) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
-            writer.write(text);
-            System.out.println("Note created successfully.");
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
-    }
+**Technologies:** Python, Flask, JavaScript, scikit-learn, NumPy,
+yfinance, Chart.js
 
-    private static void displayNote(String filename) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
-    }
+[Live Demo](https://stock-vision-ruby.vercel.app/) ·
+[Source Code](https://github.com/anagh-reven6789/stockvision-ai)
 
-    private static void copyNoteContent(String srcFilename, String destFilename) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(srcFilename));
-             BufferedWriter writer = new BufferedWriter(new FileWriter(destFilename, true))) {
-            String line;
-            writer.newLine(); // Add a new line before appending content
-            while ((line = reader.readLine()) != null) {
-                writer.write(line);
-                writer.newLine();
-            }
-            System.out.println("Note content copied successfully.");
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
-    }
+### RumourKiller
+An AI-assisted claim-verification application combining news
+retrieval, source relevance scoring and LLM-generated verdicts
+with a rule-based fallback.
 
-    private static void analyzeNote(String filename) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
-            int characters = 0;
-            int lines = 0;
-            int words = 0;
-            String line;
-            while ((line = reader.readLine()) != null) {
-                lines++;
-                characters += line.length();
-                words += line.split("\\s+").length;
-            }
-            System.out.println("Total characters: " + characters);
-            System.out.println("Total lines: " + lines);
-            System.out.println("Total words: " + words);
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
-    }
+**Technologies:** Python, FastAPI, React, GDELT, Google News RSS,
+OpenRouter, Ollama
 
-    private static void searchWordInNote(String filename, String wordToFind) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
-            int lineNumber = 0;
-            int occurrences = 0;
-            String line;
-            while ((line = reader.readLine()) != null) {
-                lineNumber++;
-                if (line.toLowerCase().contains(wordToFind.toLowerCase())) {
-                    occurrences++;
-                    System.out.println("Word '" + wordToFind + "' found at line " + lineNumber);
-                }
-            }
-            System.out.println("Total occurrences of '" + wordToFind + "': " + occurrences);
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
-    }
-}
+[Live Demo](https://rumourkiller.vercel.app/) ·
+[Source Code](https://github.com/anagh-reven6789/rumourkiller)
 
+## 🤝 Academic Leadership
 
+**Project-Based Learning Team Leader — Semesters III–VI**
+
+- Led a four-member team across four semesters.
+- Assigned tasks, tracked progress and led backend development.
+- Contributed code, prepared reports and delivered presentations.
+- Coordinated work from synopsis submission through final delivery.
+
+## 📜 Courses and Certificates
+
+- **Tata GenAI Powered Data Analytics Job Simulation** — Forage
+- **Getting Started with Agentic AI** — Great Learning
+- **Introduction to Generative AI** — Simplilearn SkillUp,
+  powered by Google Cloud
+
+## 🎯 Opportunities
+
+I'm open to internships and entry-level opportunities in
+software development, AI/ML and data analytics.
+
+## 📫 Contact
+
+[Email me](mailto:anaghtiwari180@gmail.com)
