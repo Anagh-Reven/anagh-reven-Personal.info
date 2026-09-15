@@ -1,6 +1,6 @@
 # Hi, I'm Anagh Tiwari 👋
 
-### Computer Science Student | AI & ML | Full-Stack Development
+### Computer Science (AI & ML) student | Software & Full-Stack Development | Building AI-powered applications
 
 I'm a final-year B.Tech student at Graphic Era Hill University,
 Dehradun, specialising in Artificial Intelligence and Machine Learning.
@@ -21,8 +21,7 @@ Specialisation: Artificial Intelligence and Machine Learning
 - **Backend:** Flask, FastAPI
 - **Machine Learning:** scikit-learn
 - **Tools:** Git
-- **Project Experience:** LLM integration, REST APIs, PDF processing,
-  OCR and data visualisation
+- **Project Experience:** LLM integration, REST APIs, generative AI and data visualisation
 
 ## 🚀 Featured Projects
 
