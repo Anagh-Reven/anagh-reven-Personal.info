@@ -1,6 +1,6 @@
 # Hi, I'm Anagh Tiwari 👋
 
-### Computer Science (AI & ML) student | Software & Full-Stack Development | Building AI-powered applications
+### Computer Science Engineering (AI & ML) Student | Software & Full-Stack Development | Building AI-powered applications
 
 I'm a final-year B.Tech student at Graphic Era Hill University,
 Dehradun, specialising in Artificial Intelligence and Machine Learning.
